@@ -8,7 +8,6 @@ import { useLocalStorage } from "@/lib/hooks/useLocalStorage";
 import {
   seasons,
   categoryColors,
-  categoryLabels,
   type SeasonCategory,
 } from "@/lib/data/seasons";
 

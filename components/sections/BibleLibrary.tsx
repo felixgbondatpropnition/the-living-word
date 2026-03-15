@@ -254,7 +254,7 @@ export default function BibleLibrary() {
     "tlw-read-books",
     []
   );
-  const [bookmarks, setBookmarks] = useLocalStorage<string[]>(
+  const [, setBookmarks] = useLocalStorage<string[]>(
     "bookmarks",
     []
   );
