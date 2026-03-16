@@ -26,7 +26,7 @@ function CountUpNumber({
   className,
 }: CountUpNumberProps) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-10% 0px" });
+  const isInView = useInView(ref, { once: true, margin: "0px" });
   const motionVal = useMotionValue(0);
   const [displayValue, setDisplayValue] = useState("0");
 
@@ -128,7 +128,7 @@ export default function KeyFacts() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className={cn(
             "grid gap-4 sm:gap-8 lg:gap-10",
             // 5 cols desktop, 3+2 tablet, 2+2+1 mobile

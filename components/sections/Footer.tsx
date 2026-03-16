@@ -33,7 +33,7 @@ export default function Footer() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-10% 0px" }}
+        viewport={{ once: true, margin: "0px" }}
         className="max-w-4xl mx-auto flex flex-col items-center text-center"
       >
         {/* Gold ornamental line */}

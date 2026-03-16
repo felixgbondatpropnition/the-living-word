@@ -120,7 +120,7 @@ function BookCard({
       variants={cardReveal}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-5% 0px" }}
+      viewport={{ once: true, margin: "0px" }}
       className={cn(
         "relative rounded-xl bg-warm-white dark:bg-ink-light/10",
         "border border-gold/10 card-hover cursor-pointer",
@@ -337,7 +337,7 @@ export default function BibleLibrary() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="max-w-3xl mb-12 md:mb-16"
         >
           {/* Section label */}
@@ -365,7 +365,7 @@ export default function BibleLibrary() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-5% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="mb-10 md:mb-14 space-y-4"
         >
           {/* Search bar */}

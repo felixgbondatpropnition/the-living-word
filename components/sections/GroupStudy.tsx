@@ -244,7 +244,7 @@ export default function GroupStudy() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px" }}
           variants={sectionFade}
           className="text-center mb-20"
         >
@@ -263,7 +263,7 @@ export default function GroupStudy() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-24"
         >
           {PRINCIPLES.map((p) => (
@@ -296,7 +296,7 @@ export default function GroupStudy() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px" }}
           variants={sectionFade}
           className="mb-24"
         >
@@ -377,7 +377,7 @@ export default function GroupStudy() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="mb-24"
         >
           <h3 className="font-serif text-display-sm text-cream text-center mb-12">
@@ -493,7 +493,7 @@ export default function GroupStudy() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px" }}
         >
           <h3 className="font-serif text-display-sm text-cream text-center mb-12">
             Recommended books for group study

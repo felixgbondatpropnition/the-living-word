@@ -157,7 +157,7 @@ function TestamentCard({ title, bookCount, genres }: TestamentCardProps) {
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-5% 0px" }}
+      viewport={{ once: true, margin: "0px" }}
       className={cn(
         "card-hover rounded-xl bg-warm-white border border-gold/10",
         "p-6 sm:p-8"
@@ -194,7 +194,7 @@ export default function Overview() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="max-w-3xl mb-14 md:mb-20"
         >
           {/* Section label with gold line */}

@@ -73,7 +73,7 @@ export default function Tips() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="text-center mb-16"
         >
           <motion.p
@@ -99,7 +99,7 @@ export default function Tips() {
                 key={tip.title}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: "0px" }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
@@ -132,7 +132,7 @@ export default function Tips() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "0px" }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="bg-parchment border border-gold/20 rounded-xl p-8"
             >
@@ -153,7 +153,7 @@ export default function Tips() {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: "0px" }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
               className="bg-ink text-cream rounded-xl p-8"
             >

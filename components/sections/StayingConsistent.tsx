@@ -78,7 +78,7 @@ function MythTruthCard({
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, margin: "0px" }}
       transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
       className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0 rounded-xl overflow-hidden border border-gold/10 card-hover mb-2 md:mb-0"
     >
@@ -263,7 +263,7 @@ export default function StayingConsistent() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="text-center max-w-3xl mx-auto mb-24"
         >
           <motion.blockquote
@@ -301,7 +301,7 @@ export default function StayingConsistent() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="mb-24"
         >
           <motion.div variants={fadeUp} className="text-center mb-12">
@@ -327,7 +327,7 @@ export default function StayingConsistent() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="mb-24"
         >
           <motion.div variants={fadeUp} className="text-center mb-12">
@@ -345,7 +345,7 @@ export default function StayingConsistent() {
                 key={card.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: "0px" }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
@@ -390,7 +390,7 @@ export default function StayingConsistent() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="mb-24"
         >
           <motion.div variants={fadeUp} className="text-center mb-12">
@@ -408,7 +408,7 @@ export default function StayingConsistent() {
                 key={card.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: "0px" }}
                 transition={{
                   duration: 0.5,
                   ease: "easeOut",
@@ -434,7 +434,7 @@ export default function StayingConsistent() {
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-10% 0px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="text-center max-w-3xl mx-auto"
         >
           {/* Gold ornamental line */}
