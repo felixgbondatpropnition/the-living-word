@@ -70,10 +70,10 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto pt-24 sm:pt-12 pb-20 sm:pb-8">
         {/* Decorative ornament line with star */}
         <motion.div
-          className="w-64 sm:w-80 mb-8 flex items-center"
+          className="w-48 sm:w-80 mb-4 sm:mb-8 flex items-center"
           {...anim(0, prefersReducedMotion)}
         >
           <div className="flex-1 gold-line" />
@@ -97,7 +97,7 @@ export default function Hero() {
 
         {/* Subtitle above heading */}
         <motion.p
-          className="uppercase tracking-[0.25em] text-gold-light font-sans text-sm mb-6"
+          className="uppercase tracking-[0.25em] text-gold-light font-sans text-xs sm:text-sm mb-3 sm:mb-6"
           {...anim(1, prefersReducedMotion)}
         >
           A Guide to Scripture
@@ -105,7 +105,7 @@ export default function Hero() {
 
         {/* Main heading */}
         <motion.h1
-          className="font-serif text-display-xl font-light text-cream mb-8"
+          className="font-serif text-display-xl font-light text-cream mb-4 sm:mb-8"
           {...anim(2, prefersReducedMotion)}
         >
           The{" "}
@@ -115,7 +115,7 @@ export default function Hero() {
 
         {/* Quote */}
         <motion.blockquote
-          className="font-serif italic text-gold-light/70 text-lg sm:text-xl max-w-lg mb-12"
+          className="font-serif italic text-gold-light/70 text-base sm:text-xl max-w-lg mb-8 sm:mb-12"
           {...anim(3, prefersReducedMotion)}
         >
           &ldquo;Your word is a lamp for my feet, a light on my path.&rdquo;
@@ -143,7 +143,7 @@ export default function Hero() {
 
         {/* Seasons quick-access. "What are you going through?" */}
         <motion.div
-          className="mt-16 flex flex-col items-center"
+          className="mt-10 sm:mt-16 flex flex-col items-center"
           {...anim(5, prefersReducedMotion)}
         >
           <p className="text-cream/40 font-sans text-xs uppercase tracking-[0.2em] mb-4">
