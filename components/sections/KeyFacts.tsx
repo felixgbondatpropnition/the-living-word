@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import { motion, useInView, useMotionValue, animate } from "framer-motion";
+import { useInView, useMotionValue, animate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------
@@ -80,24 +80,6 @@ const STATS: Stat[] = [
 // ---------------------------------------------------------------------------
 // KeyFacts component
 // ---------------------------------------------------------------------------
-
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.12,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" as const },
-  },
-};
 
 export default function KeyFacts() {
   return (
