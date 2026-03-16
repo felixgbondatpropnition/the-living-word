@@ -121,11 +121,7 @@ function GenreList({ genres }: { genres: Genre[] }) {
   return (
     <ul className="space-y-3 sm:space-y-4">
       {genres.map((genre) => (
-        <motion.li
-          key={genre.name}
-          variants={cardChildVariants}
-          className="flex items-start gap-3"
-        >
+        <li key={genre.name} className="flex items-start gap-3">
           {genre.icon}
           <div>
             <span className="font-sans text-sm font-semibold text-ink">
@@ -135,7 +131,7 @@ function GenreList({ genres }: { genres: Genre[] }) {
               {genre.description}
             </p>
           </div>
-        </motion.li>
+        </li>
       ))}
     </ul>
   );
@@ -153,29 +149,22 @@ interface TestamentCardProps {
 
 function TestamentCard({ title, bookCount, genres }: TestamentCardProps) {
   return (
-    <motion.div
-      variants={cardVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "0px" }}
+    <div
       className={cn(
         "card-hover rounded-xl bg-warm-white border border-gold/10",
         "p-6 sm:p-8"
       )}
       style={{ borderTopWidth: "4px", borderTopColor: "var(--gold)" }}
     >
-      <motion.div
-        variants={cardChildVariants}
-        className="flex items-center justify-between mb-6"
-      >
+      <div className="flex items-center justify-between mb-6">
         <h3 className="font-serif text-display-sm text-ink">{title}</h3>
         <span className="font-sans text-xs uppercase tracking-widest text-gold-dark bg-gold/10 px-3 py-1 rounded-full">
           {bookCount}
         </span>
-      </motion.div>
+      </div>
 
       <GenreList genres={genres} />
-    </motion.div>
+    </div>
   );
 }
 
@@ -190,42 +179,30 @@ export default function Overview() {
       className="relative bg-warm-white py-20 md:py-32 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          variants={sectionVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "0px" }}
-          className="max-w-3xl mb-14 md:mb-20"
-        >
+        <div className="max-w-3xl mb-14 md:mb-20">
           {/* Section label with gold line */}
-          <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3 mb-6">
             <div className="w-8 h-px bg-gold" aria-hidden="true" />
             <span className="font-sans text-sm uppercase tracking-widest text-gold-dark">
               Understanding the Bible
             </span>
-          </motion.div>
+          </div>
 
           {/* Title */}
-          <motion.h2
-            variants={fadeUp}
-            className="font-serif text-display-lg text-ink mb-6"
-          >
+          <h2 className="font-serif text-display-lg text-ink mb-6">
             A library, not just a book
-          </motion.h2>
+          </h2>
 
           {/* Intro paragraph */}
-          <motion.p
-            variants={fadeUp}
-            className="font-sans text-base sm:text-lg text-ink-light leading-relaxed"
-          >
+          <p className="font-sans text-base sm:text-lg text-ink-light leading-relaxed">
             The Bible isn&apos;t a single book. It&apos;s a library of 73
             books (66 in Protestant traditions, plus 7 deuterocanonical books
             in Catholic and Orthodox Bibles), written over 1,500 years by more
             than 40 authors across three continents. History, poetry, prophecy,
             letters, law, and apocalyptic literature, all woven together into
             one extraordinary story of God&apos;s relationship with humanity.
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
 
         {/* Testament cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">

@@ -124,22 +124,16 @@ export default function KeyFacts() {
         {/* Gold ornamental line. top */}
         <div className="gold-line mx-auto mb-12 max-w-xs" aria-hidden="true" />
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "0px" }}
+        <div
           className={cn(
             "grid gap-4 sm:gap-8 lg:gap-10",
-            // 5 cols desktop, 3+2 tablet, 2+2+1 mobile
             "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5",
             "justify-items-center text-center"
           )}
         >
           {STATS.map((stat) => (
-            <motion.div
+            <div
               key={stat.label}
-              variants={itemVariants}
               className="flex flex-col items-center gap-2"
             >
               <CountUpNumber
@@ -151,9 +145,9 @@ export default function KeyFacts() {
               <span className="font-sans text-xs uppercase tracking-widest text-ink-light">
                 {stat.label}
               </span>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Gold ornamental line. bottom */}
         <div className="gold-line mx-auto mt-12 max-w-xs" aria-hidden="true" />
