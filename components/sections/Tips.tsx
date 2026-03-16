@@ -91,7 +91,7 @@ export default function Tips() {
         </motion.div>
 
         {/* Two-column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-8 lg:gap-12">
           {/* Left column. practical tips */}
           <div className="space-y-5">
             {TIPS.map((tip, i) => (
@@ -106,7 +106,7 @@ export default function Tips() {
                   delay: i * 0.1,
                 }}
                 className={cn(
-                  "bg-parchment/50 border border-gold/10 rounded-xl p-6",
+                  "bg-parchment/50 border border-gold/10 rounded-xl p-4 sm:p-6",
                   "card-hover"
                 )}
               >

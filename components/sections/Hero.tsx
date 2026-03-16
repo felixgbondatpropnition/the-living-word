@@ -178,7 +178,8 @@ export default function Hero() {
                   "px-4 py-1.5 rounded-full text-xs font-sans tracking-wide",
                   "border border-cream/10 text-cream/50",
                   "transition-all duration-300",
-                  "hover:border-gold/60 hover:text-gold hover:bg-gold/5"
+                  "hover:border-gold/60 hover:text-gold hover:bg-gold/5",
+                  (label === "Lonely" || label === "Struggling") && "hidden sm:inline-block"
                 )}
               >
                 {label}
@@ -199,7 +200,7 @@ export default function Hero() {
               document.getElementById("group-study")?.scrollIntoView({ behavior: "smooth" });
             }}
             className={cn(
-              "group flex items-center gap-3 px-6 py-3 rounded-2xl",
+              "group flex items-center gap-3 px-4 sm:px-6 py-3 rounded-2xl",
               "bg-cream/[0.03] border border-cream/[0.06]",
               "transition-all duration-300",
               "hover:bg-gold/[0.06] hover:border-gold/20"

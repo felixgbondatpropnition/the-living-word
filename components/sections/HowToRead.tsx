@@ -89,7 +89,7 @@ export default function HowToRead() {
                 delay: i * 0.1,
               }}
               className={cn(
-                "relative bg-warm-white border border-gold/10 rounded-xl p-8",
+                "relative bg-warm-white border border-gold/10 rounded-xl p-5 sm:p-8",
                 "card-hover overflow-hidden"
               )}
             >

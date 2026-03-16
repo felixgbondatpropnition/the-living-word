@@ -167,7 +167,7 @@ export default function SeasonsOfLife() {
                   </span>
 
                   {/* Title */}
-                  <h3 className="font-serif text-xl font-medium text-ink mb-2 pr-8">
+                  <h3 className="font-serif text-xl font-medium text-ink mb-2 pr-6">
                     {season.title}
                   </h3>
 

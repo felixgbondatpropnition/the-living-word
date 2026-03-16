@@ -26,7 +26,7 @@ export default function ReadingPlans() {
         </div>
 
         {/* Plan cards grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.id}
@@ -39,7 +39,7 @@ export default function ReadingPlans() {
                 delay: i * 0.1,
               }}
               className={cn(
-                "bg-ink-light/30 backdrop-blur-sm border border-gold/20 rounded-xl p-8",
+                "bg-ink-light/30 backdrop-blur-sm border border-gold/20 rounded-xl p-5 sm:p-8",
                 "transition-all duration-350",
                 "hover:border-gold/40 hover:shadow-[0_0_30px_rgba(201,168,76,0.06)]"
               )}

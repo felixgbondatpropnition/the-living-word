@@ -336,7 +336,7 @@ export default function CommandSearch() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="fixed inset-0 z-50 flex items-start justify-center pt-[15vh] px-4 pointer-events-none"
+            className="fixed inset-0 z-50 flex items-start justify-center pt-6 sm:pt-[15vh] px-4 pointer-events-none"
           >
             <div
               className={cn(

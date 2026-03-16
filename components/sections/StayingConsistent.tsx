@@ -80,7 +80,7 @@ function MythTruthCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
-      className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0 rounded-xl overflow-hidden border border-gold/10 card-hover"
+      className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0 rounded-xl overflow-hidden border border-gold/10 card-hover mb-2 md:mb-0"
     >
       {/* Myth side */}
       <button

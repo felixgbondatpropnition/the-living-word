@@ -104,7 +104,7 @@ export default function KeyFacts() {
     <section className="relative bg-parchment py-16 md:py-24 overflow-hidden">
       {/* Subtle radial gradient accents */}
       <div
-        className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full opacity-[0.07] pointer-events-none"
+        className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full opacity-[0.07] pointer-events-none hidden sm:block"
         style={{
           background:
             "radial-gradient(circle, var(--gold-light) 0%, transparent 70%)",
@@ -112,7 +112,7 @@ export default function KeyFacts() {
         aria-hidden="true"
       />
       <div
-        className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.05] pointer-events-none"
+        className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full opacity-[0.05] pointer-events-none hidden sm:block"
         style={{
           background:
             "radial-gradient(circle, var(--gold) 0%, transparent 70%)",
@@ -130,7 +130,7 @@ export default function KeyFacts() {
           whileInView="visible"
           viewport={{ once: true, margin: "-10% 0px" }}
           className={cn(
-            "grid gap-8 sm:gap-10",
+            "grid gap-4 sm:gap-8 lg:gap-10",
             // 5 cols desktop, 3+2 tablet, 2+2+1 mobile
             "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5",
             "justify-items-center text-center"

@@ -167,7 +167,7 @@ export default function BookmarkPanel({
               </div>
 
               {/* Content */}
-              <div className="flex-1 overflow-y-auto overscroll-contain px-4 py-4">
+              <div className="flex-1 overflow-y-auto overscroll-contain px-3 sm:px-4 py-4">
                 {!isLoaded ? (
                   <div className="flex items-center justify-center py-12">
                     <div className="w-5 h-5 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />

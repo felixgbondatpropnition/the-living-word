@@ -28,7 +28,7 @@ const staggerContainer = {
 
 export default function Footer() {
   return (
-    <footer className="bg-ink py-20 px-6">
+    <footer className="bg-ink py-14 sm:py-20 px-6">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

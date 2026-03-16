@@ -119,7 +119,7 @@ const NEW_TESTAMENT_GENRES: Genre[] = [
 
 function GenreList({ genres }: { genres: Genre[] }) {
   return (
-    <ul className="space-y-4">
+    <ul className="space-y-3 sm:space-y-4">
       {genres.map((genre) => (
         <motion.li
           key={genre.name}

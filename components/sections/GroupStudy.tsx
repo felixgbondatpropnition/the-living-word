@@ -310,7 +310,7 @@ export default function GroupStudy() {
               const isLast = i === TIMELINE_STEPS.length - 1;
 
               return (
-                <div key={i} className="relative flex gap-5">
+                <div key={i} className="relative flex gap-3 sm:gap-5">
                   {/* Vertical line & dot */}
                   <div className="flex flex-col items-center shrink-0">
                     {/* Dot */}
@@ -499,7 +499,7 @@ export default function GroupStudy() {
             Recommended books for group study
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {BOOKS.map((book) => (
               <motion.div
                 key={book.name}

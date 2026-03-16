@@ -51,7 +51,7 @@ export default function DailyVerse() {
       <button
         onClick={() => setIsOpen(true)}
         className={cn(
-          "fixed bottom-6 left-6 z-40",
+          "fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40",
           "p-3 rounded-full",
           "bg-gold/90 hover:bg-gold text-ink",
           "shadow-lg shadow-gold/20 hover:shadow-gold/30",
@@ -91,7 +91,7 @@ export default function DailyVerse() {
               <div
                 className={cn(
                   "bg-warm-white dark:bg-ink border border-gold/20",
-                  "rounded-2xl p-8 shadow-xl max-w-md w-full",
+                  "rounded-2xl p-6 sm:p-8 shadow-xl max-w-[calc(100vw-2rem)] sm:max-w-md w-full",
                   "pointer-events-auto relative"
                 )}
               >
